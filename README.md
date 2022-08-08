@@ -4,7 +4,7 @@
 # Nedir?
 
 Bu Batch Script, Office aktivasyonunun kod ile kolayca yapılmasını sağlar. 
-Office 2013, 2016, 2019, 2021 tüm sürümlerini destekler.
+Office 2013, 2016, 2019, 2021 tüm sürümlerini destekler. Office 365 sürümü öğretmen ve öğrencilere (uygun edu.tr ve k12.tr gibi mail adresi olanlara) ücretsiz. Böyle bir imkanınız varsa bu konuyla ilgilenmeseniz de olur ama genel bilgi için faydalı olacaktır.
 
 
 
@@ -26,6 +26,8 @@ Office 2013, 2016, 2019, 2021 tüm sürümlerini destekler.
 
 *Confirmation ID (CID) - Onay Kimliği alır.
 
+*Lisans yedekleme (MAK lisanslar için birebir ki sonradan aynı lisansı kullanmak mümkün sorunsuz bir şekilde.)
+
 # Detaylar
 Bizim burada kullanacağımız etkinleştirme yöntemi çevrimiçi ve çevrimdışı aktivasyon yönteminin ikisinin de kod ile yapılabilmesi üzerine olacaktır.  
 Bununla ilgili Microsoft Windows aktivasyon dökümanı şuradan detaylı bilgi edinilebilir ve kullanılabilir. Link: https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office
@@ -33,10 +35,10 @@ Bununla ilgili Microsoft Windows aktivasyon dökümanı şuradan detaylı bilgi 
 
 # Temel Kodlar
 
-Script üzerinde kullanılan 4 temel kod var.
+Script üzerinde kullanılan 5 temel kod var.
 Bunlar hakkında bilgiye üstteki linkten ulaşabilirsiniz. Kodlar şunlar;
 
-`for /f "tokens=8" %b in ('cscript ospp.vbs /dstatus ^| findstr /b /c:"Last 5"') do (cscript ospp.vbs /unpkey:%b)` kodu cscript //nologo ospp.vbs /unpkey:(Lisans kodunun son 5 hanesi) şeklinde çalışan lisansları topluca silme kodu.
+`for /f "tokens=8" %b in ('cscript ospp.vbs /dstatus ^| findstr /b /c:"Last 5"') do (cscript ospp.vbs /unpkey:%b)` kodu `cscript //nologo ospp.vbs /unpkey:(Lisans kodunun son 5 hanesi)` şeklinde çalışan lisansları topluca silme kodu.
 
 `cscript //nologo ospp.vbs /inpkey:(ABCDE-ABCDE-ABCDE-ABCDE-ABCDE şeklinde lisans anahtarı)`
 
@@ -52,56 +54,52 @@ Bat komut dosyasını çalıştırın ve yönergeleri takip edin.
 
 Kullanım Videosu: (Önce çevrimiçi aktivasyonu deneyebilirsiniz ki çevrimiçi aktivasyonda CID istemez. Olmazsa çevrimdışı aktivasyonu deneyiniz.)
 
-[![Legal Windows Telefon Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=m05XuXU58yw)](https://www.youtube.com/watch?v=m05XuXU58yw "Legal Windows Telefon Aktivasyonu")
 
+
+--------------------------------------------------------------------------------------------------------
+[![Legal Office Telefon Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=m05XuXU58yw)](https://www.youtube.com/watch?v=m05XuXU58yw "Legal Office Telefon Aktivasyonu")
+--------------------------------------------------------------------------------------------------------
 
 
 # Genel Bilgilendirme
 Altta arayüz üzerinden nasıl aktivasyon yapılabileceği ile ilgili video mevcuttur.  
-MAK gibi çevrimiçi etkinleştirmeye müsait olan lisans anahtarları ile aktivasyon kolayca yapılabilir.
+MAK gibi çevrimiçi etkinleştirmeye müsait olan lisans anahtarları ile aktivasyon kolayca yapılabilir. Retail ISO kurulumunda Retail anahtarlar kullanılabilir, MAK anahtarlar çalışmayacaktır ki bu hatayı aşmak için Retail2Volume işlemi yapmak gerekiyor. 
 
-[![Legal Windows Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=dGIKV-9ESfw)](https://www.youtube.com/watch?v=dGIKV-9ESfw "Legal Windows Arayüz Aktivasyonu")
+
+[![Legal Office Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=Ni3vSDHdd2I)](https://youtu.be/Ni3vSDHdd2I?t=162 "Legal Office Arayüz Aktivasyonu")
 
 Diğer bir aktivasyon yöntemi ise çevrimdışı (internet bağlantısı olmama durumunda vb. kullanılabilen bir aktivasyon yöntemi) aktivasyon yöntemidir.
-RETAIL, OEM anahtarlar bu şekilde kolayca aktif edilebilir.
+RETAIL anahtarlar bu şekilde kolayca aktif edilebilir. Ücretsiz Microsoft Etkinleştirme Telefon Hattı: 0(800) 211 3939
 
-[![Legal Office Telefon Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=xMUULva-X_o)](https://www.youtube.com/watch?v=xMUULva-X_o "Legal Windows Telefon Aktivasyonu")
+[![Legal Office Telefon Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=H7cJOp2L5FU)](https://www.youtube.com/watch?v=H7cJOp2L5FU "Legal Office Telefon Aktivasyonu")
 
 
 
 # ÖNEMLİ NOTLAR
 
-Lisans anahtarı arayüz üzerinden Etkinleştirme ekranından `Ürün Anahtarını Değiştir` butonundan yapılmakta.
-
-![image](https://user-images.githubusercontent.com/10184695/183283843-3790535d-7ab2-400e-bec8-ff965b2e187f.png)
-
-Ürün anahtarını değiştir ekranının hızlıca gelmesini istiyorsanız veya sistemsel bir hata durumunda `Çalıştır`'a `SLUI.EXE` komutunu girebilirsiniz.
-Telefon etkinleştirmesi çıkmadığında `Çalıştır`'a `SLUI.EXE 4` komutunu girebilirsiniz.
-
-RETAIL anahtarlar resimdeki gibi hata verecektir.
-
-![image](https://user-images.githubusercontent.com/10184695/183283929-a09df84d-193a-498b-b0ba-da49376726ff.png)
-
-Bu hata anormal değildir. RETAIL anahtarlar tek kullanımlıktır ve telefon etkinleştirmesiyle aktif edilir. OEM anahtarlar da RETAIL gibi aktif edilir. Dizüstü bilgisayarların altında yer alan lisans anahtarlarını denediğinizde aktif etmediğini ve hata aldığınızı göreceksiniz. Bunu da telefon etkinleştirmesi ile çözebilirsiniz.
-
 ![image](https://user-images.githubusercontent.com/10184695/183368431-07979414-1b67-491d-ac30-34baceca9c1e.png)
+
+
+![image](https://user-images.githubusercontent.com/10184695/183439783-d679cc81-4424-4bab-a1fe-52085df680b7.png)
+
 
 Telefon etkinleştirmesi ile Microsoft aranır ve ekranda görülen Yükleme Kimliği (IID) kodu telefondan girilir ve Onay Kimliği (CID) kodu alınır ve ekrana girildiğinde aktivasyon gerçekleşir.
 
-Arayüz üzerinden telefon etkinleştirmesine ulaşım ve kullanımı; https://support.microsoft.com/tr-tr/windows/windows-i%C3%A7in-%C3%BCr%C3%BCn-etkinle%C5%9Ftirme-%C3%A7evrimi%C3%A7i-ve-destek-telefon-numaralar%C4%B1-35f6a805-1259-88b4-f5e9-b52cccef91a0
-
+Arayüz üzerinden telefon etkinleştirmesine ulaşım ve kullanımı; https://support.microsoft.com/tr-tr/office/etkinle%C5%9Ftirme-sihirbaz%C4%B1n%C4%B1-kullanarak-office-i-etkinle%C5%9Ftirme-1144e0de-e849-496e-8e33-ed6fb1b34202#bkmk_phone
 
 Aşağıda bir satıcının bu yöntem ile aktivasyonun nasıl yapıldığını anlattığı videosunu görüyorsunuz.
 
-[![Legal Windows Arayüz Aktivasyonu](https://user-images.githubusercontent.com/10184695/183283638-c441f5bb-2ab1-4005-9857-ea4c5d7e541f.png)](https://www.youtube.com/watch?v=K8tNvmlfoeI "Legal Windows Arayüz Aktivasyonu")
+[![Legal Office Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=HASfbIpboxQ)](https://www.youtube.com/watch?v=HASfbIpboxQ "Legal Office Arayüz Aktivasyonu")
 
 Bu da başka bir satıcının Telefon etkinleştirmesi yönlendirmesi.
 
-![image](https://user-images.githubusercontent.com/10184695/183286722-e91b0147-424c-4bec-877e-01580a7a3999.png)
+![image](https://user-images.githubusercontent.com/10184695/183441832-7ca9c86e-956b-4d8c-9097-d2e95a42bac1.png)
 
 Bu da başkası.
 
-![image](https://user-images.githubusercontent.com/10184695/183286880-f4c3578c-4d88-48f1-9c2a-f2888c9617f6.png)
+[![Legal Office Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=zdF5HO7xy8g)](https://www.youtube.com/watch?v=zdF5HO7xy8g "Legal Office Arayüz Aktivasyonu")
+
+
 
 
 # Lisans anahtarı bulmak
