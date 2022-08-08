@@ -201,3 +201,80 @@ CID kodunu siteler aracılığıyla da almak mümkün. Aşağıda belirtilen sit
 🔗https://getcid.info
 
 🔗https://webact.185.hk
+
+
+# 🔥Office Seçmeli Kurulum🔥
+ 
+ Office Deployment Tool ile İstenilen Office Sürümün Kurulması
+
+----------------------------------------------
+
+🚩Office Seçmeli Kurulum için gerekli olan aracı indirin.
+
+Office Deployment Tool indirme linki:
+
+🔗 https://www.microsoft.com/en-us/download/details.aspx?id=49117
+
+Office 2013 Deployment Tool:
+
+🔗 https://www.microsoft.com/en-us/download/details.aspx?id=36778
+
+Kurulum şu şekilde:
+
+✔️Önce exe içerisindeki dosyalar çıkarılır.
+
+✔️İçerisindeki config dosyasının adını config.xml olarak değiştirin (değiştirmeseniz de olur ancak alt satırdaki kodda config adını doğru girmelisiniz) ve kendi isteğimize göre düzenlenir. https://config.office.com/deploymentsettings adresinden online olarak da config.xml dosyanızı oluşturabilirsiniz.
+
+✔️Bulunduğunuz dizinde cmd komut satırı açıp setup.exe /configure config.xml kodunu çalıştırın ve kurulumun bitmesini bekleyin.
+
+🚩Önemli Bilgi ve Yardım Sayfaları
+
+----------------------------------------------
+
+🔗 https://docs.microsoft.com/en-us/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run
+
+🔗 https://www.heidoc.net/joomla/technology-science/microsoft/79-create-an-office-2013,-2016-and-365-offline-installer-with-the-office-deployment-tool
+
+🔗 https://docs.microsoft.com/tr-tr/deployoffice/overview-deploying-languages-microsoft-365-apps#install-the-same-languages-as-the-operating-system
+
+----------------------------------------------
+# 🔥 Office ProPlus İndirme Linkleri 🔥
+----------------------------------------------
+
+Not: RETAIL olduğu için MAK lisans aktivasyonu yapmak için Retail to Volume işlemi yapmak gerekiyor.
+
+Office 365 ProPlus:
+🔗 http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/tr-tr/O365ProPlusRetail.img
+
+Office 2013 ProPlus:
+🔗 https://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/tr-TR/ProfessionalRetail.img
+
+Office 2016 ProPlus:
+🔗 https://officecdn.microsoft.com/pr/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/tr-TR/ProPlusRetail.img
+
+Office 2019 ProPlus:
+🔗 https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/tr-tr/ProPlus2019Retail.img
+
+Office 2021 ProPlus:
+🔗 https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/tr-tr/ProPlus2021Retail.img
+
+
+#🔥Lisans Yedeği Nasıl Alınır?🔥
+
+Scriptin son aşamasında yedek alınması ile ilgili soru soracaktır. İstenilirse alttaki yönergeye göre manuel olarak da yedek alınabilir.
+
+Etkinleştirme bilgileri yerel diskinizde depolanır. Ancak, sistemin yeniden yüklenmesi veya diğer bazı eylemler etkinleştirme bilgilerini silecektir. 
+Özellikle MAK aktivasyonu yapıldığı durumlarda format sonrası yeniden etkinleştirmek için aynı anahtarı kullandığınızda kullanım hakkı kalmadığı için yeniden aktivasyon gerçekleşmez. 
+
+Sürekli lisans anahtarı aramamak için lisans yedeğinin alınması önerilir. Bu işlemi ücretsiz yazılımlarla yapabileceğiniz gibi kendiniz de yapabilirsiniz.
+
+🚩Lisans yedeği şu şekilde alınır:
+
+✔️`C:\Windows\System32\spp` klasörünü güvenli bir alana yedekleyin.
+
+🚩Lisans yedeği şu şekilde geri yüklenir:
+✔️Geri yükleme yapılırken Komut Satırı (cmd) ekranı yönetici olarak açılır. 
+✔️`net stop sppsvc` komutunu göndererek Yazılım Koruması (Software Protection Platform) servisini kapatın.
+✔️Yeniden kurulum sonrası yedeklenmiş store klasörünü `C:\Windows\System32\spp` alanına yapıştırıp üzerine kopyalayın.
+✔️`net start sppsvc` komutunu göndererek Yazılım Koruması (Software Protection Platform) servisini açın.
+✔️Bu işlem sonrası yazılım çevrimdışı olarak kendini etkinleştirecektir.
