@@ -207,7 +207,6 @@ CID kodunu siteler aracılığıyla da almak mümkün. Aşağıda belirtilen sit
  
  Office Deployment Tool ile İstenilen Office Sürümün Kurulması
 
-----------------------------------------------
 
 🚩Office Seçmeli Kurulum için gerekli olan aracı indirin.
 
@@ -219,6 +218,7 @@ Office 2013 Deployment Tool:
 
 🔗 https://www.microsoft.com/en-us/download/details.aspx?id=36778
 
+
 Kurulum şu şekilde:
 
 ✔️Önce exe içerisindeki dosyalar çıkarılır.
@@ -229,7 +229,7 @@ Kurulum şu şekilde:
 
 🚩Önemli Bilgi ve Yardım Sayfaları
 
-----------------------------------------------
+🔗 https://docs.microsoft.com/en-us/microsoft-365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run
 
 🔗 https://docs.microsoft.com/en-us/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run
 
@@ -237,9 +237,10 @@ Kurulum şu şekilde:
 
 🔗 https://docs.microsoft.com/tr-tr/deployoffice/overview-deploying-languages-microsoft-365-apps#install-the-same-languages-as-the-operating-system
 
-----------------------------------------------
+
+
 # 🔥 Office ProPlus İndirme Linkleri 🔥
-----------------------------------------------
+
 
 Not: RETAIL olduğu için MAK lisans aktivasyonu yapmak için Retail to Volume işlemi yapmak gerekiyor.
 
@@ -259,7 +260,8 @@ Office 2021 ProPlus:
 🔗 https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/tr-tr/ProPlus2021Retail.img
 
 
-#🔥Lisans Yedeği Nasıl Alınır?🔥
+
+# 🔥Lisans Yedeği Nasıl Alınır?🔥
 
 Scriptin son aşamasında yedek alınması ile ilgili soru soracaktır. İstenilirse alttaki yönergeye göre manuel olarak da yedek alınabilir.
 
@@ -268,13 +270,20 @@ Etkinleştirme bilgileri yerel diskinizde depolanır. Ancak, sistemin yeniden y�
 
 Sürekli lisans anahtarı aramamak için lisans yedeğinin alınması önerilir. Bu işlemi ücretsiz yazılımlarla yapabileceğiniz gibi kendiniz de yapabilirsiniz.
 
+
 🚩Lisans yedeği şu şekilde alınır:
 
 ✔️`C:\Windows\System32\spp` klasörünü güvenli bir alana yedekleyin.
 
+
 🚩Lisans yedeği şu şekilde geri yüklenir:
+
 ✔️Geri yükleme yapılırken Komut Satırı (cmd) ekranı yönetici olarak açılır. 
+
 ✔️`net stop sppsvc` komutunu göndererek Yazılım Koruması (Software Protection Platform) servisini kapatın.
+
 ✔️Yeniden kurulum sonrası yedeklenmiş store klasörünü `C:\Windows\System32\spp` alanına yapıştırıp üzerine kopyalayın.
+
 ✔️`net start sppsvc` komutunu göndererek Yazılım Koruması (Software Protection Platform) servisini açın.
+
 ✔️Bu işlem sonrası yazılım çevrimdışı olarak kendini etkinleştirecektir.
