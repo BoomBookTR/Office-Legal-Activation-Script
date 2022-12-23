@@ -89,7 +89,7 @@ Arayüz üzerinden telefon etkinleştirmesine ulaşım ve kullanımı; https://s
 
 Aşağıda bir satıcının bu yöntem ile aktivasyonun nasıl yapıldığını anlattığı videosunu görüyorsunuz.
 
-[![Legal Office Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=HASfbIpboxQ)](https://www.youtube.com/watch?v=HASfbIpboxQ "Legal Office Arayüz Aktivasyonu")
+[![Legal Office Arayüz Aktivasyonu](https://yt-embed.live/embed?v=HASfbIpboxQ)](https://www.youtube.com/watch?v=HASfbIpboxQ "Legal Office Arayüz Aktivasyonu")
 
 Bu da başka bir satıcının Telefon etkinleştirmesi yönlendirmesi.
 
@@ -97,7 +97,7 @@ Bu da başka bir satıcının Telefon etkinleştirmesi yönlendirmesi.
 
 Bu da başkası.
 
-[![Legal Office Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=zdF5HO7xy8g)](https://www.youtube.com/watch?v=zdF5HO7xy8g "Legal Office Arayüz Aktivasyonu")
+[![Legal Office Arayüz Aktivasyonu](https://yt-embed.live/embed?v=zdF5HO7xy8g)](https://www.youtube.com/watch?v=zdF5HO7xy8g "Legal Office Arayüz Aktivasyonu")
 
 
 
