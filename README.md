@@ -66,12 +66,12 @@ Altta arayüz üzerinden nasıl aktivasyon yapılabileceği ile ilgili video mev
 MAK gibi çevrimiçi etkinleştirmeye müsait olan lisans anahtarları ile aktivasyon kolayca yapılabilir. Retail ISO kurulumunda Retail anahtarlar kullanılabilir, MAK anahtarlar çalışmayacaktır ki bu hatayı aşmak için Retail2Volume işlemi yapmak gerekiyor. 
 
 
-[![Legal Office Arayüz Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=Ni3vSDHdd2I)](https://youtu.be/Ni3vSDHdd2I?t=162 "Legal Office Arayüz Aktivasyonu")
+[![Legal Office Arayüz Aktivasyonu](https://yt-embed.live/embed?v=Ni3vSDHdd2I)](https://youtu.be/Ni3vSDHdd2I?t=162 "Legal Office Arayüz Aktivasyonu")
 
 Diğer bir aktivasyon yöntemi ise çevrimdışı (internet bağlantısı olmama durumunda vb. kullanılabilen bir aktivasyon yöntemi) aktivasyon yöntemidir.
 RETAIL anahtarlar bu şekilde kolayca aktif edilebilir. Ücretsiz Microsoft Etkinleştirme Telefon Hattı: 0(800) 211 3939
 
-[![Legal Office Telefon Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=H7cJOp2L5FU)](https://www.youtube.com/watch?v=H7cJOp2L5FU "Legal Office Telefon Aktivasyonu")
+[![Legal Office Telefon Aktivasyonu](https://yt-embed.live/embed?v=H7cJOp2L5FU)](https://www.youtube.com/watch?v=H7cJOp2L5FU "Legal Office Telefon Aktivasyonu")
 
 
 
