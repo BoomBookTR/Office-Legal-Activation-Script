@@ -57,7 +57,20 @@ Kullanım Videosu: (Önce çevrimiçi aktivasyonu deneyebilirsiniz ki çevrimiç
 
 
 --------------------------------------------------------------------------------------------------------
-[![Legal Office Telefon Aktivasyonu](https://yt-embed.herokuapp.com/embed?v=m05XuXU58yw)](https://www.youtube.com/watch?v=m05XuXU58yw "Legal Office Telefon Aktivasyonu")
+[![Legal Office Telefon Aktivasyonu](https://yt-embed.live/embed?v=m05XuXU58yw)](https://www.
+
+
+
+
+
+
+
+
+
+
+
+
+.com/watch?v=m05XuXU58yw "Legal Office Telefon Aktivasyonu")
 --------------------------------------------------------------------------------------------------------
 
 
