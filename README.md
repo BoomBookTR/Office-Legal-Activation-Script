@@ -108,11 +108,6 @@ Bu da başka bir satıcının Telefon etkinleştirmesi yönlendirmesi.
 
 ![image](https://user-images.githubusercontent.com/10184695/183441832-7ca9c86e-956b-4d8c-9097-d2e95a42bac1.png)
 
-Bu da başkası.
-
-[![Legal Office Arayüz Aktivasyonu](https://yt-embed.live/embed?v=zdF5HO7xy8g)](https://www.youtube.com/watch?v=zdF5HO7xy8g "Legal Office Arayüz Aktivasyonu")
-
-
 
 
 # Lisans anahtarı bulmak
