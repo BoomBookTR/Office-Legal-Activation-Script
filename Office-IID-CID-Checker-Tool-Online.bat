@@ -49,6 +49,11 @@ cd /d %~dp0
 setlocal EnableDelayedExpansion
 call :setESC
 
+:: color help <<<<<<<<<<<<<<<<<<btn renk bilgileri i‡in cmd ekranna yaz
+:: color [arkaplanrengi][yazrengi]
+::color 1F
+mode con lines=20 cols=150
+
 
 
 
@@ -139,7 +144,8 @@ goto :cid_point
 
 
 rem URL ve giriŸ bilgilerini tanmlayn
-set "url=https://getconfirmationid.com/ajax/cidms_api?iids=%IID%&username=trogiup24h&password=PHO"
+set "url=https://pidkey.com/ajax/cidms_api?iids=%IID%&username=trogiup24h&password=PHO"
+::set "url=https://getconfirmationid.com/ajax/cidms_api?iids=%IID%&username=trogiup24h&password=PHO"
 set "username=trogiup24h"
 set "password=PHO"
 ::Alternatif Yollar.
