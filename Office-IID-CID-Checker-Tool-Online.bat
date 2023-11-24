@@ -47,6 +47,8 @@ cd /d %~dp0
 :: .... your code start ....
 @echo off
 setlocal EnableDelayedExpansion
+call :setESC
+
 
 
 
@@ -182,8 +184,21 @@ if "%CID%" == "" (
 
 pushd %officedir%
 
-set /p CIDKey=%ESC%[101;93mCID Kodunu Gir:%ESC%[0m
-cscript //nologo ospp.vbs /actcid:%CIDKey%
+
+if exist "C:\Program Files\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files\Microsoft Office\Office16"
+if exist "C:\Program Files (x86)\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files (x86)\Microsoft Office\Office16"
+if exist "C:\Program Files\Microsoft Office\Office15\ospp.vbs" cd /d "C:\Program Files\Microsoft Office\Office15"
+if exist "C:\Program Files (x86)\Microsoft Office\Office15\ospp.vbs" cd /d "C:\Program Files (x86)\Microsoft Office\Office15"
+if exist "C:\Program Files\Microsoft Office\Office14\ospp.vbs" cd /d "C:\Program Files\Microsoft Office\Office14"
+if exist "C:\Program Files (x86)\Microsoft Office\Office14\ospp.vbs" cd /d "C:\Program Files (x86)\Microsoft Office\Office14"
+
+
+echo.
+echo.
+echo.
+
+::set /p CIDKey=%ESC%[101;93mCID Kodunu Gir:%ESC%[0m
+cscript //nologo ospp.vbs /actcid:%CID%
 
 ::Offline Activation
 ::KMS veya MAK anahtarçyla aktivasyon geráekleütirir.
@@ -200,3 +215,11 @@ goto :secim-tb
 
 :devametme
 pause
+
+
+:setESC
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
+  set ESC=%%b
+  exit /B 0
+)
+exit /B 0
